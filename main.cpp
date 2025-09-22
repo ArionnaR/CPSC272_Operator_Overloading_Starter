@@ -2,6 +2,7 @@
 // Created by Christopher Vaughn
 // Date: 9/15/25
 //Project: 272 Forking & Overloading Exercise
+// Arionna Rogers / 9-22-25 / MCSCI-272-5238
 //
 #include <iostream>
 #include "ServiceAccount.h"
@@ -38,6 +39,17 @@ int main() {
         std::cout << "Account a has more money" << std::endl;
     else
         std::cout << "Account b has more money" << std::endl;
+
+    // Third ServiceAccount with identifier "2468", password "password", and balance $250.00
+    ServiceAccount c("2468", "password", 250.00);
+    // Fourth ServiceAccount with identifier "1357", password "password", and balance $500.00
+    ServiceAccount d("1357", "password", 500.00);
+
+    // Test less-than operator (<) - compares balance only
+    if (c < d)
+        std::cout << "Account c has less money" << std::endl;
+    else
+        std::cout << "Account d has less money" << std::endl;
     
     return 0;  // Indicate successful program execution
 }

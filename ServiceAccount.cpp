@@ -2,6 +2,7 @@
 // Created by Christopher Vaughn
 // Date: 9/15/25
 // Project: 272 Forking & Overloading Exercise
+// Arionna Rogers / 9-22-25 / MCSCI-272-5238
 //
 #include "ServiceAccount.h"
 #include <iostream>
@@ -123,5 +124,9 @@ bool operator>(const ServiceAccount& a, const ServiceAccount& b) {
     return a.getBalance() > b.getBalance();
 }
 
-
+/*Less-than operator implementation
+* Returns true if account 'a' has a lesser balance than account 'b', false otherwise*/
+bool operator<(const ServiceAccount& a, const ServiceAccount& b) {
+    return a.getBalance() < b.getBalance();
+}
 

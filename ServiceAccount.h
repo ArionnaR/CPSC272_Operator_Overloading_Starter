@@ -2,6 +2,7 @@
 // Created by Christopher Vaughn
 // Date: 9/15/25
 // Project: 272 Forking & Overloading Exercise
+// Arionna Rogers / 9-22-25 / MCSCI-272-5238
 //
 
 #ifndef CPSC272_OPERATOR_OVERLOADING_STARTER_SERVICEACCOUNT_H
@@ -94,5 +95,10 @@ bool operator==(const ServiceAccount&, const ServiceAccount&);
  * @note Comparison is based solely on account balance
  */
 bool operator>(const ServiceAccount&, const ServiceAccount&);
+
+/*Less-than operator overload for ServiceAccount objects
+ * Returns true if left account has a lesser balance than right account, false otherwise
+ */
+bool operator<(const ServiceAccount&, const ServiceAccount&);
 
 #endif //CPSC272_OPERATOR_OVERLOADING_STARTER_SERVICEACCOUNT_H
